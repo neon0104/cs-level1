@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>연습문제 1-2번</h2>
+    <script>
+    var w = prompt("자신의 채중을 넣어주세요");
+    var h = prompt("자신의 키를 넣어주세요")
+    var w2 = Number(w);
+    var h2 = Number(h);
+    //bmi = 체중/ (키/10)^2 백분율로 나타내기 위하여 100 곱해주고 버림
+    var bmi = w2 / Math.pow(h2/10,2)*100;
+    var pbmi = bmi.toFixed(2);
+
+
+    console.log ("당신의 BMI 수치는 "+ pbmi + "%입니다.");
+
+    
+    </script>
+</body>
+</html>
